@@ -24,6 +24,9 @@
             <a href="index.html" id="logo">BolKitapçı</a>
             <div class="nav-link" id="navLink">
                 <!-- menu tuşu eklenecek -->
+                <span class="material-symbols-outlined side" onclick="hideMenu()">
+                    close
+                </span>
                 <ul>
                     <li><a href="#">ANASAYFA</a></li>
                     <li><a href="#">HAKKIMIZDA</a></li>
@@ -32,6 +35,9 @@
                     <li><a href="#">İLETİŞİM</a></li>
                 </ul>
             </div>
+            <span class="material-symbols-outlined side" onclick="showMenu()">
+                menu
+            </span>
         </nav>
         <div class="text-box">
             <h1>Şehrimizin En Büyük Kitapçısı</h1>
@@ -39,8 +45,6 @@
                 hissederek alın.</p>
             <a href="#" class="hero-btn">Ayrıntılar için tıklayın</a>
         </div>
-
-
 
     </section>
 
@@ -187,6 +191,15 @@
 
         </div>
     </footer>
+<script>
+    function hideMenu(){
+        document.getElementById('navLink').style.right= '-200px';
+    }
+    function showMenu(){
+        document.getElementById('navLink').style.right= '0px';
+    }
+</script>
+
 </body>
 
 </html>
